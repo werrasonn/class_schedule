@@ -1,0 +1,86 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.classschedule.fragment_subject_list"
+    android:background="#eeeeee"
+    android:id="@+id/subject_list_frame">
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal"
+                android:elevation="5dp"
+                android:outlineProvider="bounds">
+
+                <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/books"/>
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Find your subjects here."
+                    android:textSize="25sp"
+                    android:textColor="#ffffff"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"/>
+
+
+
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/subject_notice">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/subject"
+                android:layout_marginTop="100dp"  />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start by Adding Subjects."
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_subject"
+                android:dividerHeight="10dp"
+                android:divider="#eeeeee"
+                android:background="#ffffff"
+                android:layout_margin="10dp" />
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

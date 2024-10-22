@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_sub_add"
+            android:icon="@drawable/nav_subject"
+            android:title="Subject" />
+
+
+
+
+
+        <item
+            android:id="@+id/nav_view_sch"
+            android:icon="@drawable/nav_schedule"
+            android:title="Schedule" />
+
+
+
+
+
+
+    </group>
+
+
+    <item
+        android:title="Assignments">
+        <menu >
+            <group android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/nav_ass_pending"
+                android:icon="@drawable/nav_pending"
+                android:title="Pending" />
+
+
+            <item
+                android:id="@+id/nav_ass_submitted"
+                android:icon="@drawable/ic_done"
+                android:title="Submitted" />
+
+            </group>
+        </menu>
+    </item>
+
+
+
+
+</menu>
+

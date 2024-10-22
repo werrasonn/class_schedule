@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:background="#ffffff"
+    android:elevation="2dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/assg_list_rem_view">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/submitted_message"
+            android:textColor="@color/colorPrimary"/>
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_important"
+            android:layout_marginLeft="0dp"
+            android:id="@+id/notice_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/assg_rem_text"
+            android:text="Remaining Days :"
+            android:textColor="#F44336"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/assg_list_rem"
+            android:layout_marginLeft="5dp"
+            android:text="5"
+            android:textColor="#F44336"/>
+
+    </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+
+            <ImageView
+                android:layout_marginLeft="15dp"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_assg_date"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:textAlignment="gravity"
+                android:id="@+id/sch_list_start_time"
+                android:text="Submission Date :"
+                android:layout_marginLeft="5dp"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:id="@+id/assg_list_sub_date"
+                android:layout_marginLeft="5dp"
+                android:text="7th January, 2017"
+                android:textAlignment="gravity"/>
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/assg_list_name"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:text="Create a list of 5 students."
+            android:textColor="#616161"
+            android:fontFamily="sans-serif-light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_assg_sub"
+                android:layout_marginLeft="15dp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/assg_list_sub"
+                android:layout_marginLeft="5dp"
+                android:text="Operating System"
+                android:textColor="#616161"/>
+
+
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_ins_ind"
+                android:layout_marginLeft="15dp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/assg_list_ins"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="Dr. Arun Timalsina"
+                android:textColor="#616161"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

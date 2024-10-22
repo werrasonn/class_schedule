@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/assg_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/assg_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD ASSIGNMENT"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="34sp"
+        android:textColor="#B0BEC5"
+        android:fontFamily="sans-serif-light"/>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/assignment" />
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="#9E9E9E"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/ass_name"
+            android:hint="Assignment Name"
+            android:inputType="textCapWords"
+            android:background="@null"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="sans-serif-light"
+            android:textColorHint="@color/colorPrimary" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="#9E9E9E"/>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/ass_submission_datetime"
+        android:hint="Submission Date"
+        android:inputType="none"
+        android:focusable="false"
+        android:cursorVisible="false"
+        android:background="@null"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="sans-serif-light"
+        android:textColorHint="@color/colorPrimary"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="#9E9E9E"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/ass_reminder_datetime"
+        android:hint="Reminder Date"
+        android:inputType="none"
+        android:focusable="false"
+        android:cursorVisible="false"
+        android:background="@null"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="sans-serif-light"
+        android:textColorHint="@color/colorPrimary" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="#9E9E9E"/>
+
+
+
+    <Spinner
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/ass_sub_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Base.TextAppearance.AppCompat.Medium" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="#9E9E9E"/>
+
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/ass_radiogroup">
+
+
+                <RadioButton
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:text="Pending"
+                    android:id="@+id/ass_pending"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="sans-serif-light"
+                    android:textColorHint="@color/colorPrimary" />
+
+                <RadioButton
+                    android:layout_marginRight="40dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:text="Submitted"
+                    android:id="@+id/ass_submitted"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="sans-serif-light"
+                    android:textColorHint="@color/colorPrimary" />
+
+
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="#9E9E9E"/>
+
+
+
+        <Button
+            android:layout_marginRight="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addBut_assg"
+            android:text="ADD"
+            android:background="@color/ButtonColor"
+            android:textColor="#ffffff" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/delBut_assg"
+        android:text="DELETE"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="80dp"
+        android:background="@color/DeleteColor"
+        android:textColor="#ffffff"
+        android:visibility="gone"
+        android:layout_marginBottom="15dp"/>
+
+
+
+</LinearLayout>
+
+    </ScrollView>
+

@@ -1,0 +1,174 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context="com.example.classschedule.activity_schedule_detail"
+    android:background="#ffffff">
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true"
+        android:background="#ffffff"
+        android:focusable="false">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/sch_det_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close"/>
+
+
+    </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/sch_detail_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Operating System"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="34sp"
+            android:textColor="#B0BEC5"
+            android:fontFamily="sans-serif-light"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/course"
+            android:layout_marginTop="20dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:background="#9E9E9E"/>
+            <TextView
+                android:id="@+id/sch_detail_period"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Sunday, 9:00 AM to 12:00 PM"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="sans-serif-light"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:background="#9E9E9E"/>
+
+            <TextView
+                android:id="@+id/sch_detail_ins"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Anil Verma"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="sans-serif-light"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:background="#9E9E9E"/>
+
+            <TextView
+                android:id="@+id/sch_detail_th_or_pra"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Theory"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="sans-serif-light"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:background="#9E9E9E"/>
+
+            <TextView
+                android:id="@+id/sch_detail_remarks"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Remarks"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="sans-serif-light"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:background="#9E9E9E"/>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/sch_detail_edit"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/edit" />
+
+                <ImageView
+                    android:id="@+id/sch_detail_delete"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/del"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
+

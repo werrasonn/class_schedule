@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.classschedule.activity_addSubject"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#ffffff">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="#ffffff">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/subj_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_close"/>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/sub_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD SUBJECT"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="34sp"
+            android:textColor="#B0BEC5"
+            android:fontFamily="sans-serif-light"/>
+
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/subject"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:background="#9E9E9E"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/sub_name"
+            android:hint="Subject Name"
+            android:inputType="textCapWords"
+            android:background="@null"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="sans-serif-light"
+            android:textColorHint="@color/colorPrimary"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:background="#9E9E9E"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/inst_name"
+            android:hint="Instructor Name"
+            android:inputType="textCapWords"
+            android:background="@null"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="sans-serif-light"
+            android:textColorHint="@color/colorPrimary"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:background="#9E9E9E"/>
+
+        <Spinner
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            style="@style/Base.TextAppearance.AppCompat.Medium" />
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:background="#9E9E9E"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/addBut_sub"
+            android:text="ADD"
+            android:layout_marginRight="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/ButtonColor"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/delBut_sub"
+            android:text="DELETE"
+            android:layout_marginRight="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/DeleteColor"
+            android:textColor="#ffffff"
+            android:visibility="gone"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
+</ScrollView>

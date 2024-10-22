@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/schedule_item">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_time_indicator"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:textAlignment="gravity"
+            android:id="@+id/sch_list_start_time"
+            android:text="9:00"
+            android:layout_marginLeft="5dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:text="-"
+            android:layout_marginLeft="5dp"
+            android:textAlignment="gravity"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:id="@+id/sch_list_end_time"
+            android:layout_marginLeft="5dp"
+            android:text="10:00"
+            android:textAlignment="gravity"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:textSize="20sp"
+        android:id="@+id/sch_list_sub"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="5dp"
+        android:text="TEst data"
+        android:textColor="#616161"
+        android:fontFamily="sans-serif-light"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" >
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_ins_ind"
+            android:layout_marginLeft="15dp"
+            android:scaleType="centerInside"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/sch_list_ins"
+            android:layout_marginLeft="5dp"
+            android:text="TEst data"
+            android:textColor="#616161"/>
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_assg_sub"
+            android:scaleType="centerInside"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sch_th_or_pra"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:text="TEst data"
+            android:textColor="#616161"/>
+
+    </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/shadow_drawable"/>
+
+
+
+
+
+
+</LinearLayout>

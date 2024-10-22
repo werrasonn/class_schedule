@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="#ffffff"
+    android:focusable="false"
+    android:focusableInTouchMode="false" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/sch_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/sch_add_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD SCHEDULE"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="34sp"
+        android:textColor="#B0BEC5"
+        android:fontFamily="sans-serif-light"/>
+
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/schedule" />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="#9E9E9E"/>
+
+    <Spinner
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/sch_day_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textAlignment="center" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="#9E9E9E"/>
+
+
+
+    <Spinner
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/sch_sub_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="#9E9E9E"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/sch_start_time"
+            android:hint="Start Time"
+            android:inputType="none"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:background="@null"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="sans-serif-light"
+            android:textColorHint="@color/colorPrimary"/>
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:hint=" - "
+            android:inputType="none"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:background="@null"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="sans-serif-light"
+            android:textColorHint="@color/colorPrimary"/>
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/sch_end_time"
+        android:hint="End Time"
+        android:inputType="none"
+        android:focusable="false"
+        android:cursorVisible="false"
+        android:background="@null"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="sans-serif-light"
+        android:textColorHint="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="#9E9E9E"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/sch_remarks"
+        android:inputType="textCapWords"
+        android:hint="Remarks"
+        android:background="@null"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="sans-serif-light"
+        android:textColorHint="@color/colorPrimary" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="#9E9E9E"/>
+
+
+
+
+
+    <Button
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sch_addBt"
+        android:text="ADD"
+        android:background="@color/ButtonColor"
+        android:textColor="#ffffff"/>
+
+</LinearLayout>
+
+
+</ScrollView>
