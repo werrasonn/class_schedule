@@ -14,9 +14,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 
-/**
- * A simple {@link Fragment} subclass.
- */
+
 public class fragment_sch_saturday extends Fragment {
 
 

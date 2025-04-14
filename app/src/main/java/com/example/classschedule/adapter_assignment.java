@@ -25,9 +25,7 @@ import org.joda.time.format.DateTimeFormatter;
 
 
 
-/**
- * Created by pi on 11/1/17.
- */
+
 
 public class adapter_assignment extends ArrayAdapter<object_assignment> {
 

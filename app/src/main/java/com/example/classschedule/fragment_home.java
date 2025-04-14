@@ -33,9 +33,7 @@ import androidx.fragment.app.FragmentTransaction;
 import com.google.android.material.navigation.NavigationView;
 
 
-/**
- * A simple {@link Fragment} subclass.
- */
+
 public class fragment_home extends Fragment {
 
 

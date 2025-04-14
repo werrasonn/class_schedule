@@ -17,9 +17,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 
-/**
- * A simple {@link Fragment} subclass.
- */
+
 public class fragment_subject_list extends Fragment {
 
 

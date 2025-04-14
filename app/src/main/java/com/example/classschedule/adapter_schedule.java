@@ -16,9 +16,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-/**
- * Created by pi on 10/28/17.
- */
+
 
 public class adapter_schedule extends ArrayAdapter<object_schedule> {
 

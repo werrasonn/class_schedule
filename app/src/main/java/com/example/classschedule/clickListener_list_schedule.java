@@ -6,9 +6,7 @@ import android.widget.AdapterView;
 
 
 
-/**
- * Created by pi on 10/29/17.
- */
+
 
 public class clickListener_list_schedule implements AdapterView.OnItemClickListener {
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

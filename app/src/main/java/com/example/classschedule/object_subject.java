@@ -2,9 +2,7 @@ package com.example.classschedule;
 
 import java.io.Serializable;
 
-/**
- * Created by pi on 10/26/17.
- */
+
 
 public class object_subject implements Serializable{
     private int _id;

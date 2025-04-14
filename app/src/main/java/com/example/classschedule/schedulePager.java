@@ -9,9 +9,7 @@ import  androidx.fragment.app.FragmentManager;
 
 import java.util.ArrayList;
 
-/**
- * Created by pi on 10/27/17.
- */
+
 
 public class schedulePager extends FragmentPagerAdapter {
     private ArrayList<Fragment> fragments=new ArrayList<Fragment>();

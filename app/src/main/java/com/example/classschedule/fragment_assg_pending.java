@@ -16,9 +16,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 
-/**
- * A simple {@link Fragment} subclass.
- */
+
 public class fragment_assg_pending extends Fragment {
 
     private View _view;

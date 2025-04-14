@@ -4,9 +4,7 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.AdapterView;
 
-/**
- * Created by pi on 11/13/17.
- */
+
 
 public class clickListener_list_subject implements AdapterView.OnItemClickListener {
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

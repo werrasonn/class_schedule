@@ -2,9 +2,6 @@ package com.example.classschedule;
 
 import java.io.Serializable;
 
-/**
- * Created by pi on 10/27/17.
- */
 
 public class object_schedule implements Serializable{
 //    DB fields

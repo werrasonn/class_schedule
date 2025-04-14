@@ -334,7 +334,8 @@ public class db_helper extends SQLiteOpenHelper {
     public ArrayList<object_schedule> getSchedule_day(String day)
     {
         //Creating a raw query to find the data.
-        String query="Select "+TABLE_SUBJECTS+"."+COLUMN_SUBJECT_SUBJECTNAME+", "+TABLE_SCH+"."+COLUMN_SCH_ID+" ,"+TABLE_SCH+"."+COLUMN_SCH_DAY+", "+TABLE_SCH+"."+COLUMN_SCH_START+", "+TABLE_SCH+"."+COLUMN_SCH_END+", "+TABLE_SCH+"."+COLUMN_SCH_REMARKS+", "+TABLE_SUBJECTS+"."+COLUMN_SUBJECT_INSTRUCTORNAME+", "+TABLE_SCH+"."+COLUMN_SCH_ID+","+COLUMN_SUBJECT_TH_OR_PRA+" from "+TABLE_SCH+" INNER JOIN "+TABLE_SUBJECTS+" ON "+TABLE_SCH+"."+COLUMN_SCH_SUBID+"="+TABLE_SUBJECTS+"."+COLUMN_SUBJECT_ID+" where "+TABLE_SCH+"."+COLUMN_SCH_DAY+"=\""+day+"\" order by "+COLUMN_SCH_START+" ASC";
+        String query="Select "+TABLE_SUBJECTS+"."+COLUMN_SUBJECT_SUBJECTNAME+", "+TABLE_SCH+"."+COLUMN_SCH_ID+" ,"+TABLE_SCH+"."+COLUMN_SCH_DAY+", "+TABLE_SCH+"."+COLUMN_SCH_START+", "+TABLE_SCH+"."+COLUMN_SCH_END+
+                ", "+TABLE_SCH+"."+COLUMN_SCH_REMARKS+", "+TABLE_SUBJECTS+"."+COLUMN_SUBJECT_INSTRUCTORNAME+", "+TABLE_SCH+"."+COLUMN_SCH_ID+","+COLUMN_SUBJECT_TH_OR_PRA+" from "+TABLE_SCH+" INNER JOIN "+TABLE_SUBJECTS+" ON "+TABLE_SCH+"."+COLUMN_SCH_SUBID+"="+TABLE_SUBJECTS+"."+COLUMN_SUBJECT_ID+" where "+TABLE_SCH+"."+COLUMN_SCH_DAY+"=\""+day+"\" order by "+COLUMN_SCH_START+" ASC";
 //        String query="Select * from "+TABLE_SCH; //+" where "+COLUMN_SCH_DAY+"= \""+day+"\"";
         SQLiteDatabase db=getWritableDatabase();
         Cursor cursor=db.rawQuery(query,null);

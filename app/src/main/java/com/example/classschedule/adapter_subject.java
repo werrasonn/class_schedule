@@ -11,9 +11,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
-/**
- * Created by pi on 11/13/17.
- */
+
 
 public class adapter_subject extends ArrayAdapter<object_subject> {
 
